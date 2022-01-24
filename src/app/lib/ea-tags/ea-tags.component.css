@@ -1,0 +1,32 @@
+.tags{
+  border:1px solid royalblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding:4px;
+}
+.tags .tags__input{
+  outline:none;
+  border: none;
+  flex-grow: 1;
+  font-family: inherit;
+}
+.tags .tags__tag{
+  border-radius: 5px;
+  background-color:deepskyblue;
+  padding: 8px 16px;
+  color:darkslateblue;
+}
+.tags .tags__close{
+  color:crimson;
+  cursor: pointer;
+  margin-left:4px;
+}
+.tags .tags__close:hover{
+  animation:.7s delete infinite;
+}
+@keyframes delete{
+  50%{
+    color:grey;
+  }
+}

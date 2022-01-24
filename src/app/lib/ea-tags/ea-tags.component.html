@@ -1,0 +1,10 @@
+<div class="tags">
+  <!--*ngFor-->
+  <div @fadeIn @fadeOut @slideLeftIn @slideRightOut *ngFor="let tag of tags;index as i;"  class='tags__tag'>
+    <span class='tags__text'>{{tag}}</span>
+    <span (click)="delete(i)" class='tags__close'>X</span>
+  </div>
+
+  <input type="text" [maxLength]="max" class="tags__input" (keyup.enter)="add($event)" placeholder='Ajouter un tag'>
+  <a href="#">Ajouter</a>
+</div>

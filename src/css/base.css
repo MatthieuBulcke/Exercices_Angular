@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+:root{
+  --font-primary:'Lato',sans-serif;
+  --color-primary:royalblue;
+  --color-secondary:coral;
+}
+
+body{
+  font-family: var(--font-primary);
+  color:var(--color-primary);
+  margin: 0;
+  padding: 0;
+}
+/* EN SASS
+a{
+  &:link,
+  &:visited{
+    color:var(--color-primary);
+    text-decoration:none;
+  }
+  &:hover,
+  &:active{
+    color:var(--color-secondary);
+  }
+}
+*/
+a:link,a:visited{
+  color:var(--color-primary);
+  text-decoration:none;
+  margin: auto;
+}
+a:hover,a:active{
+  color:var(--color-secondary);
+}
