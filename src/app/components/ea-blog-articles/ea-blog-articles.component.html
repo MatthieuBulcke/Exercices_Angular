@@ -1,0 +1,4 @@
+<div class="article">
+  <h2 (click)='toggle()' class="article__title">{{article.title}}</h2>
+  <p *ngIf='isCollapsed' class="article__text">{{article.text}}</p>
+</div>

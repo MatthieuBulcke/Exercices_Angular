@@ -1,0 +1,6 @@
+<div class="blog-form">
+  <input placeholder="Titre" type="text" class="blog-form__title" [(ngModel)]="article.title">
+  <textarea placeholder="Text" class="blog-form__text" [ngClass]="{'blog-form__error': article.text.length == max}" [maxLength]="max" cols="30" rows="10" [(ngModel)]="article.text"></textarea>
+  <div class="blog-form__count">{{article.text.length}}/{{max}}</div>
+  <button class="btn blog-form__button" (click)="post()" [disabled]="article.title.length <= 5 || article.text.length <=5">Ajouter</button>
+</div>

@@ -1,25 +1,13 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
+import { fadeIn, fadeOut, slideLeftIn, slideRightOut } from './ea-core/ea-animation';
 
 @Component({
   selector: 'ea-tags',
   animations:[
-    trigger('fadeIn',[
-      state('void',style({opacity:0})),
-      transition(':enter',animate('1s ease-in')),
-    ]),
-    trigger('fadeOut',[
-      state('void',style({opacity:0})),
-      transition(':leave',animate('1s ease-out')),
-    ]),
-    trigger('slideLeftIn',[
-      state('void',style({transform:'translateX(-10px)'})),
-      transition(':leave',animate('1s ease-out')),
-    ]),
-    trigger('slideRightOut',[
-      state('void',style({transform:'translateX(10px)'})),
-      transition(':leave',animate('1s ease-in')),
-    ])
+    fadeIn,
+    fadeOut,
+    slideLeftIn,
+    slideRightOut,
   ],
   templateUrl: './ea-tags.component.html',
   styleUrls: ['./ea-tags.component.css']

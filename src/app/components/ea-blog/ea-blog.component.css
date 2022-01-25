@@ -1,0 +1,9 @@
+ea-blog-form{
+  width: -webkit-fill-available;
+}
+.ea-blog__button{
+  border-radius: 10px;
+  margin: auto;
+  padding:2em;
+  width:50%;
+}

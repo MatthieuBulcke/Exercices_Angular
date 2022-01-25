@@ -1,0 +1,4 @@
+<ea-blog-form [max]="300" (addEmitter)="add($event)"></ea-blog-form>
+<button class="ea-blog__button" (click)='close()'>close</button>
+<button class="ea-blog__button" (click)='open()'>open</button>
+<ea-blog-articles *ngFor="let article of articles" [article]="article"></ea-blog-articles>

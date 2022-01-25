@@ -1,0 +1,13 @@
+.btn{
+  width: 100%;
+  margin:1em 10em;
+  padding:1em;
+  border-radius: 2em;
+  background-color: cadetblue;
+  color: aqua;
+  font-size:1.5em;
+}
+.btn:disabled{
+  background-color: gray;
+  color:white;
+}

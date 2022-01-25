@@ -1,0 +1,18 @@
+.blog-form{
+  display: flex;
+  flex-wrap: wrap;
+  margin:2em;
+  gap:1em;
+}
+.blog-form__title{
+  border-radius: 10px;
+  width:100%;
+}
+.blog-form__text{
+  border-radius: 10px;
+  width:100%;
+}
+.blog-form__error{
+  border:1px solid crimson;
+  outline:1px solid crimson;
+}
