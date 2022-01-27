@@ -7,6 +7,7 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class AppComponent implements AfterViewInit {
   title = 'Angular_Exercices';
+  rng:number=Math.floor(Math.random()*1000);
 
   @ViewChild('pageTitle')
   titleRef!: ElementRef;

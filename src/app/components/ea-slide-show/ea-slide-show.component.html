@@ -1,0 +1,20 @@
+<div id='slide' class="slide-show__block">
+  <span (click)='previousSlide()' class="previous">
+    <svg>
+      <use xlink:href="assets/icoMoon/symbol-defs.svg#icon-circle-left"></use>
+    </svg>
+  </span>
+  <ng-container *ngFor="let img of images;let i = index">
+    <div class='img' *ngIf="i == slide">
+      <h2>{{img.title}}</h2>
+      <img [src]="img.imgUrl" alt="">
+      <p>{{img.desc}}</p>
+      <!-- <slide-show-img *ngIf="i == slide"></slide-show-img> -->
+    </div>
+  </ng-container>
+  <span (click)='nextSlide()' class="next">
+    <svg>
+      <use xlink:href="assets/icoMoon/symbol-defs.svg#icon-circle-right"></use>
+    </svg>
+  </span>
+</div>

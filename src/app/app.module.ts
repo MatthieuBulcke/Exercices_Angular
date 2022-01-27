@@ -10,6 +10,14 @@ import { EaBlogComponent } from './components/ea-blog/ea-blog.component';
 import { EaBlogFormComponent } from './components/ea-blog-form/ea-blog-form.component';
 import { FormsModule } from '@angular/forms';
 import { EaBlogArticlesComponent } from './components/ea-blog-articles/ea-blog-articles.component';
+import { EaCardComponent } from './components/ea-card/ea-card.component';
+import { EaPanelComponent } from './components/ea-panel/ea-panel.component';
+import { EaTabsComponent } from './components/ea-tabs/ea-tabs.component';
+import { EaSlideShowComponent } from './components/ea-slide-show/ea-slide-show.component';
+import { SlideShowImgComponent } from './components/ea-slide-show/slide-show-img/slide-show-img.component';
+import { EaColorsComponent } from './components/ea-colors/ea-colors.component';
+import { EaCryptoComponent } from './components/ea-crypto/ea-crypto.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +27,20 @@ import { EaBlogArticlesComponent } from './components/ea-blog-articles/ea-blog-a
     EaBlogComponent,
     EaBlogFormComponent,
     EaBlogArticlesComponent,
+    EaCardComponent,
+    EaPanelComponent,
+    EaTabsComponent,
+    EaSlideShowComponent,
+    SlideShowImgComponent,
+    EaColorsComponent,
+    EaCryptoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    EaTagsModule
+    EaTagsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

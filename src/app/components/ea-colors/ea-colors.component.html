@@ -1,0 +1,11 @@
+<div class='ea-colors__container'>
+  <span [style]='backOne' class='ea-colors__color'></span>
+  <span [style]='backTwo' class='ea-colors__color'></span>
+  <span [style]='backThree' class='ea-colors__color'></span>
+  <p>Couleur : {{hue}}/100</p>
+  <input [(ngModel)]="hue" type="range" (mousemove)="updateColor()">
+  <p>Saturation : {{saturation}}/100</p>
+  <input [(ngModel)]="saturation" type="range" (mousemove)="updateColor()">
+  <p>Luminosité : {{lightness}}/100</p>
+  <input [(ngModel)]="lightness" type="range" (mousemove)="updateColor()">
+</div>

@@ -1,0 +1,21 @@
+.crypto-market{
+  display: flex;
+  flex-wrap: wrap;
+  margin:2em;
+  gap:1em;
+}
+.crypto-market div{
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  text-align: center;
+  width:10%;
+  border:2px solid goldenrod;
+  background-color: rgba(189, 189, 189, 0.5);
+  padding:1em;
+  border-radius: 10px;
+}
+.crypto-market div img{
+  width:100%;
+}

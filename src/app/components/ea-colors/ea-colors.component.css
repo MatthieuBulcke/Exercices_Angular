@@ -1,0 +1,12 @@
+.ea-colors__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding:2em;
+  background-color: rgba(109, 109, 109, 0.5);
+}
+.ea-colors__color{
+  width:4em;
+  height:4em;
+  background-color: lightgrey;
+}
