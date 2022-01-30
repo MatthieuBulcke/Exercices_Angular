@@ -10,3 +10,23 @@
   height:4em;
   background-color: lightgrey;
 }
+.ea-colors_pick{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 1em;
+  background-color:rgba(63, 63, 63, 0.5) ;
+  border-radius: 2em;
+}
+.ea-colors_pick span{
+  width:2em;
+  height:2em;
+  background-color: aqua;
+}
+.ea-colors__values{
+  background-color: rgb(100, 100, 100);
+  margin:1em;
+  padding:1em;
+  border-radius: 10px;
+  color: white;
+}

@@ -2,10 +2,20 @@
   <span [style]='backOne' class='ea-colors__color'></span>
   <span [style]='backTwo' class='ea-colors__color'></span>
   <span [style]='backThree' class='ea-colors__color'></span>
-  <p>Couleur : {{hue}}/100</p>
-  <input [(ngModel)]="hue" type="range" (mousemove)="updateColor()">
+  <p>Couleur : {{hue}}/360</p>
+  <input max=360 [(ngModel)]="hue" type="range" (mousemove)="updateColor()">
   <p>Saturation : {{saturation}}/100</p>
   <input [(ngModel)]="saturation" type="range" (mousemove)="updateColor()">
   <p>Luminosité : {{lightness}}/100</p>
   <input [(ngModel)]="lightness" type="range" (mousemove)="updateColor()">
+  <div class='ea-colors__values'>
+<pre>:root&#123;
+  {{backOne}};
+  {{backTwo}};
+  {{backThree}}
+}</pre>
+  </div>
+  <div class='ea-colors_pick'>
+    <span (click)='pickColor($event)' *ngFor="let color of colors;let i = index" [style]="pickers[i]"></span>
+  </div>
 </div>

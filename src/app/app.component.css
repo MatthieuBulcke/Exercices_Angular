@@ -3,3 +3,9 @@ ea-blog{
   flex-wrap: wrap;
   justify-content: center;
 }
+.exercies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:1em 0;
+}

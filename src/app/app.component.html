@@ -1,24 +1,34 @@
 <div class="container">
+  <ea-colors></ea-colors>
+  <!--
   <ea-slide-show></ea-slide-show>
   <ea-panel></ea-panel>
-  <ea-colors></ea-colors>
-  <h1 #pageTitle>Angular</h1>
-  <div class="cards">
-    <ea-card title="Premier">
-      <div class="header"><h3>header</h3></div>
-      <p>Lorem, ipsum dolor sit amet</p>
-      <div class="footer"><h3>footer</h3></div>
-    </ea-card>
-    <ea-card title="Deuxième">
-      <div class="header"><h3>header</h3></div>
-      <img src='http://placekitten.com/{{rng}}/{{rng}}' alt='KityCat'/>
-      <div class="footer"><h3>footer</h3></div>
-    </ea-card>
+  <div class='exercies'>
+    <h1 #pageTitle>Angular</h1>
+    <div class="cards">
+      <ea-card title="Premier">
+        <div class="header">
+          <h3>header</h3>
+        </div>
+        <p>Lorem, ipsum dolor sit amet</p>
+        <div class="footer">
+          <h3>footer</h3>
+        </div>
+      </ea-card>
+      <ea-card title="Deuxième">
+        <div class="header">
+          <h3>header</h3>
+        </div>
+        <img src='http://placekitten.com/{{rng}}/{{rng}}' alt='KityCat' />
+        <div class="footer">
+          <h3>footer</h3>
+        </div>
+      </ea-card>
+    </div>
+    {{ pageTitle.textContent }}
+    <ea-tags [max]="10"></ea-tags>
+    <ea-tags [max]="3"></ea-tags>
   </div>
-  {{ pageTitle.textContent }}
-
-  <ea-tags [max]="10"></ea-tags>
-  <ea-tags [max]="3"></ea-tags>
   <ea-blog></ea-blog>
-  <ea-crypto></ea-crypto>
+  <ea-crypto></ea-crypto>-->
 </div>
