@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\ea-blog",
+    "\\src\\app\\components\\ea-blog-articles",
+    "\\src\\app\\components\\ea-blog-form",
+    "\\src\\app\\components\\ea-card",
+    "\\src\\app\\components\\ea-colors",
+    "\\src\\app\\components\\ea-crypto"
   ],
+  "SelectedNode": "\\src\\app\\components\\ea-blog\\ea-blog.component.ts",
   "PreviewInSolutionExplorer": false
 }
